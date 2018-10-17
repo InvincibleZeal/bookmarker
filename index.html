@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <!-- icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  </head>
+  <body onload="fetchBookmarks();">
+    <div class="container">
+      <h3 class="center-align">Bookmarker</h3>
+      <div class="card grey lighten-4">
+        <div class="card-content center-align black-text">
+          <span class="card-title black-text">Bookmark Your Favourite Sites</span>
+          <form class="col s12" id="myForm">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="siteName" name="siteName" type="text" class="validate">
+                <label for="siteName">Site Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="siteUrl" type="text" class="validate">
+                <label for="siteUrl">Site URL</label>
+              </div>
+            </div>
+            <button class="btn waves-effect blue" type="submit" id="save-btn">Save Bookmark</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card grey lighten-4" id="results">
+        <div class="card-content center-align black-text">
+          <span class="card-title black-text">Saved Bookmarks</span>
+          <ul class="collection left-align" id="bookmarksResults">
+
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        <p class="grey-text center-align">&copy; 2018, Bookmarker</p>
+      </footer>
+    </div> <!-- ./container -->
+    
+    <!-- Compiled and minified JavaScript -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>        
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
